@@ -3,7 +3,7 @@ const Body = ({value,link,summary}) => {
         <div className="bodied">
             <h2>Source:{'  ' + value}</h2>
             
-            <br />
+            
                 {summary} &nbsp;&nbsp;<a href={link}>Read more...</a>
             
             

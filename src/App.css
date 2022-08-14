@@ -1,57 +1,78 @@
-.home-page{
-  
-background-color: darkslategrey;
+body{
+  margin: 0px;
+  padding: 0px;
 }
 .bodied {
   padding:50px ;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
-  background-color: black;
+  margin-top: 30px;
+  background-color: #163334;
   color:white;
   border-radius: 25px;
-  border:dodgerblue;
+
 }
 a{
   text-decoration: none;
+  color:white;
 }
 input{
-  float: right;
+  display: inline;
   margin-right:35px ;
   margin-top: 35px;
   color: black;
   border-radius: 8px;
+  margin-bottom:10px ;
   
   
 }
 
 p{
   background-color: none;
-  color: white;
+  color: black;
 }
 .nav-bar{
   
-  background-color: burlywood;
+  background-color:#2E151B;
   margin-right: 20px;
   margin-left: 10px;
+  color: white;
   border-radius: 20px;
 
   
 }
 .list {
   display: inline-block;
+  margin-left: 25px;
  
 list-style-type: none;
 
 
 }
-
-h2{
+.house-ul{
   display: inline;
+  margin-left: 450px;
 }
+.App{
+  background-color: #376E6F;
+  margin-top: 0px;
+}
+
+.page-name{
+  display: inline;
+  margin-left: 25px;
+}
+
 li{
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
 
+}
+.span {
+  margin-right: 90px;
+}
+input{
+  height: 20px;
 }
