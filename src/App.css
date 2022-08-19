@@ -27,6 +27,10 @@ input{
   
   
 }
+input,.page-name,.house-ul,.list{
+  margin-top:30px ;
+  margin-bottom: 30px;
+}
 
 p{
   background-color: none;
@@ -37,6 +41,7 @@ p{
   background-color:#2E151B;
   margin-right: 20px;
   margin-left: 10px;
+  
   color: white;
   border-radius: 20px;
 
@@ -70,6 +75,7 @@ li{
   margin-right: 20px;
 
 }
+
 .span {
   margin-right: 90px;
 }
