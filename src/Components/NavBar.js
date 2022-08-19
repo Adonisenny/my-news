@@ -1,4 +1,5 @@
 import '../App.css'
+import { Link } from 'react-router-dom';
 
 const NavBar = ({inputed,onChange}) => {
     return ( 
@@ -9,9 +10,10 @@ const NavBar = ({inputed,onChange}) => {
 <div className='house-ul'>
 
 <ul className="list">
-    <li>Contact</li>
+    <li><Link to= '/'>Home</Link></li>
+    <li><Link to= '/contact'>Contact</Link></li>
     <li>About</li>
-    <li>Other Products</li>
+    
 
 </ul>
 <span className='span'><input type='text' placeholder='search by author' inputed={inputed} onChange={onChange} />
@@ -24,5 +26,6 @@ const NavBar = ({inputed,onChange}) => {
      );
 }
  
+
 export default NavBar;
 

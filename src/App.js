@@ -2,12 +2,15 @@ import Body from './Components/Body';
 import {useEffect,useState} from 'react'
 import './App.css'
 import NavBar from './Components/NavBar';
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+import Contact from './Components/Contact';
 const axios = require("axios");
 
 const options = {
   method: 'GET',
   url: 'https://newscatcher.p.rapidapi.com/v1/search_enterprise',
-  params: {q: 'CNN', lang: 'en', sort_by: 'relevancy', page: '1', media: 'True'},
+  params: {q: 'fashion', lang: 'en', sort_by: 'relevancy', page: '1', media: 'True'},
   headers: {
     'X-RapidAPI-Key': 'e8ab5297camshdfbb47b9ac7d130p1efe56jsnddad2a502ad0',
     'X-RapidAPI-Host': 'newscatcher.p.rapidapi.com'
@@ -61,20 +64,39 @@ const onChange = (e) => {
  
 
   return (
-    <div className="App">
+    <Router  >
+       <div className="App">
         
-        
-        
-        
+
+
+
         <div>{ !isLoaded && <p>loading...</p>}</div> 
-        <NavBar onChange={onChange} inputed={inputed}/>
-       
+       {isLoaded && <NavBar onChange={onChange} inputed={inputed}/>}
+        <Switch>
+       <Route exact path='/'>
+
        <div >{newsElements}</div> 
-      
+        </Route>
+        <Route>
+        <Contact path='/contact' />
+        </Route>
+       </Switch>
         
+        
+ </div>
+ </Router> 
+
+
+
+
+   
+
+
        
-    
-    </div>
+        
+        
+        
+        
   );
 }
 
