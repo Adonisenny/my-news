@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+A news blog using React and a news catcher API.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
